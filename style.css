@@ -1,8 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
 margin:0;
 font-family:Arial;
 background:#f8f0ff;
 color:#333;
+min-height: 100vh;
+padding-bottom: 80px;
+
 }
 
 header{
@@ -50,9 +57,10 @@ color:white;
 text-align:center;
 padding:15px;
 margin-top:30px;
- position: relative;
- top:0;
-  width: 100%;
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
 }
 table{
 width:80%;
@@ -123,7 +131,6 @@ border-radius:5px;
 cursor:pointer;
 }
 
-
 button:hover{
 background:#9b59b6;
 }
@@ -140,12 +147,28 @@ width:90%;
 }
 
 table{
-width:100%;
+width:auto;
 font-size:14px;
+margin-left: auto;
+margin-right: auto;
 }
+table tr,td,th{
+    font-size: 0.7rem;
+}
+.tablee{
+    margin-left: auto;
+margin-right: auto;
+}
+
 
 form{
 width:90%;
 }
 
+}
+
+@media (max-width: 400px){
+    table tr, td,th{
+        font-size: 0.5rem;
+    }
 }
